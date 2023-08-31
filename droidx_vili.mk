@@ -12,7 +12,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, device/xiaomi/vili/device.mk)
 
 # Inherit some common Lineage stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+$(call inherit-product, vendor/droidx/config/common_full_phone.mk)
 
 # MIUI stuff
 TARGET_SHIPS_GALLERY=true
@@ -21,7 +21,9 @@ PRODUCT_BRAND := Xiaomi
 PRODUCT_DEVICE := vili
 PRODUCT_MANUFACTURER := Xiaomi
 PRODUCT_MODEL := 2107113SG
-PRODUCT_NAME := lineage_vili
+PRODUCT_NAME := droidx_vili
+DROIDX_BUILD_TYPE := OFFICIAL
+DROIDX_GAPPS := true
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 
