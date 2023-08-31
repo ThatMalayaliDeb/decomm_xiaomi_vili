@@ -117,6 +117,9 @@ BOOT_KERNEL_MODULES := \
 BOARD_VENDOR_KERNEL_MODULES_LOAD := $(strip $(shell cat $(DEVICE_PATH)/modules.load))
 BOARD_VENDOR_RAMDISK_RECOVERY_KERNEL_MODULES_LOAD := $(BOOT_KERNEL_MODULES)
 
+# MIUI camera stuff
+-include vendor/xiaomi/vili-miuicamera/products/board.mk
+
 # OTA Assert
 TARGET_OTA_ASSERT_DEVICE := vili
 
