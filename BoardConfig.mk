@@ -127,15 +127,6 @@ BOARD_VENDOR_RAMDISK_RECOVERY_KERNEL_MODULES_LOAD := $(BOOT_KERNEL_MODULES)
 # OTA Assert
 TARGET_OTA_ASSERT_DEVICE := vili
 
-# LiveDisplay
-ifneq ("$(wildcard hardware/lineage/livedisplay)", "")
-SOONG_CONFIG_NAMESPACES += livedisplay
-SOONG_CONFIG_livedisplay += enabled
-SOONG_CONFIG_livedisplay_enabled := true
-DEVICE_MANIFEST_FILE += \
-    $(DEVICE_PATH)/hidl/manifest_lineage.xml
-endif
-
 # Partitions
 BOARD_FLASH_BLOCK_SIZE := 131072
 BOARD_DTBOIMG_PARTITION_SIZE := 25165824
