@@ -385,7 +385,8 @@ PRODUCT_PACKAGES += \
     libcodec2_hidl@1.1.vendor \
     libavservices_minijail_vendor \
     libcodec2_soft_common.vendor \
-    libsfplugin_ccodec_utils.vendor
+    libsfplugin_ccodec_utils.vendor \
+    libstagefright_softomx.vendor
 
 # MiuiCamera
 $(call inherit-product-if-exists, vendor/xiaomi/vili-miuicamera/products/miuicamera.mk)
