@@ -375,6 +375,10 @@ PRODUCT_PACKAGES += \
 
 # Minijail
 PRODUCT_PACKAGES += \
+    libminijail \
+    libminijail.vendor \
+    android.hardware.media.c2@1.2.vendor \
+    libcodec2_vndk.vendor \
     libavservices_minijail \
     libavservices_minijail.vendor \
     libcodec2_hidl@1.0.vendor \
