@@ -5,9 +5,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-	$(LOCAL_DIR)/droidx_vili.mk
+	$(LOCAL_DIR)/aosp_vili.mk
 
 COMMON_LUNCH_CHOICES := \
-	droidx_vili-user \
-	droidx_vili-userdebug \
-	droidx_vili-eng
+	aosp_vili-user \
+	aosp_vili-userdebug \
+	aosp_vili-eng
